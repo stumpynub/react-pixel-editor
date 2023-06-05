@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50"
+   height="50"
+   viewBox="0 0 13.229166 13.229167"
+   version="1.1"
+   id="svg135"
+   inkscape:export-filename="toolbar_grid.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   sodipodi:docname="grid-toggle.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview137"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="5.4021324"
+     inkscape:cx="11.754617"
+     inkscape:cy="10.366277"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2">
+    <inkscape:grid
+       type="xygrid"
+       id="grid319" />
+  </sodipodi:namedview>
+  <defs
+     id="defs132">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1215"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,1.4552088,0,1 @ F,0,0,1,0,0.96844237,0,1 @ F,0,0,1,0,1.5824095,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="0"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <g
+     inkscape:label="Grid"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <path
+       style="fill:#000000;stroke:#ffffff;stroke-width:0.7;stroke-linecap:round;paint-order:stroke fill markers"
+       d="M 3.96875,11.90625 V 1.3229166"
+       id="path427" />
+    <path
+       style="fill:#000000;stroke:#ffffff;stroke-width:0.7;stroke-linecap:round;paint-order:stroke fill markers"
+       d="M 9.2604167,11.90625 V 1.3229166"
+       id="path1038" />
+    <path
+       style="fill:#000000;stroke:#ffffff;stroke-width:0.7;stroke-linecap:round;paint-order:stroke fill markers"
+       d="M 1.3229166,9.2604167 H 11.90625"
+       id="path1049" />
+    <path
+       style="fill:#000000;stroke:#ffffff;stroke-width:0.7;stroke-linecap:round;paint-order:stroke fill markers"
+       d="M 1.3229166,3.96875 H 11.90625"
+       id="path1051" />
+    <path
+       style="fill:#000000;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-dasharray:none;paint-order:stroke fill markers"
+       d="M 6.6145833,11.90625 V 1.3229166"
+       id="path1057" />
+    <path
+       style="fill:#000000;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-dasharray:none;paint-order:stroke fill markers"
+       d="M 11.90625,6.6145833 H 1.3229166"
+       id="path1059" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Play"
+     style="display:none">
+    <path
+       sodipodi:type="star"
+       style="fill:#ffffff;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="path1166"
+       inkscape:flatsided="true"
+       sodipodi:sides="3"
+       sodipodi:cx="2.6458333"
+       sodipodi:cy="11.90625"
+       sodipodi:r1="5.2916665"
+       sodipodi:r2="2.6458333"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-0.52359878"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 3.3734378,7.8748313 3.3708918,5.8385567 a 0.55913047,0.55913047 120 0 1 -0.4842212,0.838695 l -6.61458334,0 A 0.91360455,0.91360455 60.000002 0 1 -1.1456797,13.181676 L 1.918229,7.8748313 a 0.84016519,0.84016519 1.5352345e-6 0 1 1.4552088,0 z"
+       transform="rotate(90,7.1770559,11.024115)"
+       inkscape:transform-center-x="-1.3229165"
+       inkscape:path-effect="#path-effect1215" />
+  </g>
+</svg>

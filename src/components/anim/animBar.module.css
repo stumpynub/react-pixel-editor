@@ -1,0 +1,21 @@
+.animBar { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 25px;
+    border-radius: 15px;
+    justify-self: center;
+    align-self: center;
+    margin-top: 25px;
+}
+
+
+.animBarButton { 
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.animBarButton:hover { 
+    opacity: 0.5;
+}

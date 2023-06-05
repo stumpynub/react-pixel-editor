@@ -1,0 +1,9 @@
+.toolbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected { 
+    border: 5px solid solid rgb(1, 153, 255);
+}

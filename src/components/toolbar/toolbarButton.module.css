@@ -1,0 +1,29 @@
+.button { 
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color:rgb(76, 86, 99);
+    border-radius: 5px;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected { 
+    border: 1px solid white ;
+}
+
+.button:hover { 
+    border: 1px solid white;
+    opacity: 0.5;
+}
+
+svg { 
+    width: 30px;
+    height:30px;
+}
