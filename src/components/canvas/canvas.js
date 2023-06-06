@@ -10,15 +10,6 @@ export default function (props) {
   let ref = useRef(null);
 
 
-  useEffect(() => { 
-    var list = Array.from(document.getElementsByClassName("canvas-holder")[0].children);
-    var i = list.indexOf(ref.current)
-    setIndex(i)
-
-    var arrayList = props.canvasList
-    arrayList[i] = {index : ref.current}
-  })
-
   function setPressed() {
     setMousePressed(!mousePressed);
   }

@@ -2,6 +2,7 @@ import { AiFillDelete as Delete } from "react-icons/ai";
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./selector.module.css";
 import { unmountComponentAtNode } from "react-dom";
+import html2canvas from "html2canvas";
 
 export default function SelectorCard(props) {
   let [isActive, setIsActive] = useState(false);
@@ -15,7 +16,10 @@ export default function SelectorCard(props) {
     );
     setIndex(index);
     setIsActive(index === props.activeIndex);
-  }, [props.activeIndex, props.cavnasList]);
+
+  }, [props.activeIndex, props.canvasList]);
+
+
 
   function setActiveCanvas() {
     props.setActive(index);

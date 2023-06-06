@@ -17,7 +17,7 @@ function App() {
   let [mouseStates, setMouseStates] = useState({"leftMouse": false, "middleMouse": false , "rightMouse": false})
   let [gridEnabled, setGridEnabled] = useState(true);
   let [animPlaying, setAnimPlaying] = useState(false);
-  let [canvasList, setCanvasList] = useState([]);
+  let [canvasList, setCanvasList] = useState([{"id": 0}]);
   let [activeTool, setActiveTool] = useState(tools.pen);
   let [currentColor, setCurrentColor] = useState("black");
 
@@ -32,6 +32,7 @@ function App() {
     if (e.button === 2) {
       state.rightMouse = true 
     }
+    console.log(mouseStates)
     setMouseStates(state)
   }
 
@@ -56,18 +57,14 @@ function App() {
   }
 
   function addCanvas() {
-    let id =
-      canvasList.length >= 1 ? canvasList[canvasList.length - 1].id + 1 : 0;
-    let canvas = {
-      id: id,
-      canvas: null,
-    };
-
-    setCanvasList([...canvasList, canvas]);
+    console.log(canvasList)
+    let entry = {"id": canvasList.length}
+    setCanvasList([...canvasList, entry]);
   }
 
   function removeCanvas(id) {
-    setCanvasList(canvasList.filter((canvas) => canvas.id != id));
+    let list = canvasList.filter((canvas) => canvas.id !== id)
+    setCanvasList(list);
   }
 
   function setTool(t) {
@@ -90,10 +87,9 @@ function App() {
       <PaletteHolder setCurrentColor={setCurrentColor} />
 
       <div className="canvas-holder">
-        {canvasList.map((canvas) => (
+        {canvasList.map((c) => (
           <Canvas
-            id={canvas.id}
-            canvasList={canvasList}
+            key={c.id}
             gridEnabled={gridEnabled}
             mouseStates={mouseStates}
             activeTool={activeTool}
@@ -103,6 +99,7 @@ function App() {
       </div>
 
       <AnimBar setPlaying={setPlaying} playing={animPlaying} />
+
       <Selector
         playing={animPlaying}
         canvasList={canvasList}

@@ -52,3 +52,7 @@
 .DeleteShow:hover { 
     width: 25px;
 }
+
+.thumbnail { 
+    width: 10px;
+}
