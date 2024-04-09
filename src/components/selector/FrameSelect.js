@@ -1,4 +1,4 @@
-import SelectorCard from "./selectorCard";
+import FrameSelectCard from "./FrameSelectCard";
 import styles from "./selector.module.css";
 import { useEffect, useRef, useState } from "react";
 
@@ -16,7 +16,7 @@ export default function (props) {
     if (props.playing) {
       playNextFrame();
     }
-  }, (playbackSpeed * 1000) / 5);
+  }, (playbackSpeed * 1000) / 3);
 
   function playNextFrame() {
     let frame = activeIndex + 1;
@@ -105,14 +105,14 @@ export default function (props) {
   return (
     <div ref={ref} className={styles.selector}>
       {props.canvasList.map((canvas) => (
-          <SelectorCard
+          <FrameSelectCard
           setCount={setCount}
           canvasCount={canvasCount}
           setActive={setActiveCanvas}
           activeIndex={activeIndex}
           canvasList={props.canvasList}
           removeCanvas={props.removeCanvas}
-          ></SelectorCard>
+          ></FrameSelectCard>
           ))}
         {props.children}
     </div>

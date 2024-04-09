@@ -3,14 +3,45 @@
     height: 20px;
     background-color: black;
     border: 1px solid white;
+    transition: 0.2s;
+}
 
+.paletteButtonSelected { 
+    width: 22px;
+    height: 22px;
+    background-color: black;
+    border: 1px solid rgb(106, 214, 250);
+    transition: 0.1s;
 }
 
 .paletteHolder { 
 height: 10px;
 width: 100%;
 display: flex;
+flex-wrap: wrap;
+gap: 1px;
 justify-content: center;
 align-items: center;
-margin-bottom: 10px;
+margin-bottom: 20px;
+}
+
+.addBttn { 
+    width: 25px;
+    height: 25px;
+}
+.pickerShow { 
+    z-index: 100;
+    position: absolute;
+    display: block;
+    left: 50%;
+    translate: -50%;
+}
+
+.pickerHide { 
+    z-index: 10;
+    position: absolute;
+    display: none;
+    left: 50%;
+    translate: -50%;
+
 }

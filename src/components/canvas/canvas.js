@@ -1,14 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./canvas.module.css";
-import Pixel from "./pixel";
+import Pixel from "./Pixel";
 
 export default function (props) {
-  let [mousePressed, setMousePressed] = useState(false);
-  let [index, setIndex] = useState(0);
-  let width = [...Array(32).keys()];
-  let height = [...Array(32).keys()];
-  let ref = useRef(null);
-
+  const [mousePressed, setMousePressed] = useState(false);
+  const [index, setIndex] = useState(0);
+  const ref = useRef(null);
 
   function setPressed() {
     setMousePressed(!mousePressed);
@@ -17,13 +14,16 @@ export default function (props) {
   return (
     <table ref={ref} className="canvas" index={index} onClick={setPressed}>
       <tbody>
-        {width.map(() => (
+        {props.canvasHeight.map(() => (
           <tr>
-            {height.map(() => (
-              <Pixel
+            {props.canvasWidth.map((index) => (
+              <Pixel 
+                key={index}
                 currentColor={props.currentColor}
                 canvas={ref.current}
-                className="canvas"
+                canvasWidth={props.canvasWidth}
+                canvasHeight={props.canvasHeight}
+                className={styles.canvas}
                 gridEnabled={props.gridEnabled}
                 color={props.currentColor}
                 mouseStates={props.mouseStates}

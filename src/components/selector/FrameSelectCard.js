@@ -1,13 +1,13 @@
 import { AiFillDelete as Delete } from "react-icons/ai";
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./selector.module.css";
-import { unmountComponentAtNode } from "react-dom";
-import html2canvas from "html2canvas";
 
-export default function SelectorCard(props) {
+
+export default function FrameSelectCard(props) {
   let [isActive, setIsActive] = useState(false);
   let [isHovered, setIsHovered] = useState(false);
   let [index, setIndex] = useState(0);
+  let [id, setId] = useState("");
   let ref = useRef(null);
 
   useEffect(() => {
@@ -15,11 +15,9 @@ export default function SelectorCard(props) {
       ref.current
     );
     setIndex(index);
+    setId(props.canvasList[index].id);
     setIsActive(index === props.activeIndex);
-
   }, [props.activeIndex, props.canvasList]);
-
-
 
   function setActiveCanvas() {
     props.setActive(index);
@@ -32,9 +30,9 @@ export default function SelectorCard(props) {
   function setHoverFalse() {
     setIsHovered(false);
   }
-  
-  function removeCanvas() { 
-    props.removeCanvas(index)
+
+  function removeCanvas() {
+    props.removeCanvas(id);
   }
 
   return (
@@ -43,14 +41,14 @@ export default function SelectorCard(props) {
       onClick={setActiveCanvas}
       className={
         isActive
-          ? `${styles.SelectorCard} ${styles.SelectorCardActive}`
-          : styles.SelectorCard
+          ? `${styles.selectorCard} ${styles.selectorCardActive}`
+          : styles.selectorCard
       }
       onMouseOver={setHoverTrue}
       onMouseLeave={setHoverFalse}
     >
       <Delete
-        className={isHovered ? styles.DeleteShow : styles.DeleteHide}
+        className={isHovered ? styles.deleteShow : styles.deleteHide}
         onClick={removeCanvas}
       />
       <p>{index + 1}</p>

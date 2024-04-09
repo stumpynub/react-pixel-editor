@@ -22,12 +22,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
-.add-canvas-btn { 
-  text-align: center;
-  flex-shrink: 0;
-  flex-grow: 0;
-  align-self: center;
-  justify-self: center;
-} 
+
+.add-canvas-btn:hover { 
+  fill: rgb(177, 224, 255);
+}
+
+
+.timeline { 
+  margin-left: auto; 
+  margin-right: auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  translate: -50%;
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+}
